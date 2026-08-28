@@ -1,105 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon | OBA Academy</title>
-  <meta name="description" content="Our new website is on its way. Stay tuned!">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Webinar Registrations | Ophthalmology Business Academy</title>
+<meta name="description" content="Live expert panel webinars from the Ophthalmology Business Academy. Free to attend, replay included. Browse upcoming events and reserve your seat." />
+<link rel="icon" type="image/svg+xml" href="logo-nav.svg" />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
-    body {
-      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
-      color: #ffffff;
-      text-align: center;
-      padding: 24px;
-    }
+<!-- Microsoft Clarity — TODO: register an OBA Clarity project and paste its ID, then uncomment -->
+<!--
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "CLARITY_ID_HERE");
+</script>
+-->
 
-    .container {
-      max-width: 640px;
-    }
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MBLM7XRG2Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    .badge {
-      display: inline-block;
-      padding: 8px 20px;
-      border: 1px solid rgba(255, 255, 255, 0.35);
-      border-radius: 999px;
-      font-size: 0.8rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.85);
-      margin-bottom: 28px;
-    }
+  gtag('config', 'G-MBLM7XRG2Y');
+</script>
 
-    h1 {
-      font-size: clamp(2.2rem, 6vw, 3.6rem);
-      font-weight: 700;
-      line-height: 1.15;
-      margin-bottom: 16px;
-    }
+<style>
+  :root {
+    --blue-900: #16212b;
+    --blue-800: #24313f;
+    --blue-700: #3c68a8;
+    --blue-600: #4D78BB;
+    --blue-500: #5b86c4;
+    --blue-400: #7fc4ea;
+    --blue-100: #c9dced;
+    --blue-50:  #edf3f9;
+    --accent:   #32A7DF;
+    --slate-900: #1b2530;
+    --slate-700: #3f4a55;
+    --slate-500: #7f8a95;
+    --slate-100: #ECEEF5;
+    --white:    #ffffff;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+    --shadow-md: 0 8px 30px rgba(0,0,0,0.12);
+    --shadow-lg: 0 20px 50px rgba(0,0,0,0.2);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--white); color: var(--slate-700); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
 
-    h1 span {
-      background: linear-gradient(90deg, #ffd86f, #fc6262);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+  /* ===== HEADER ===== */
+  .site-header { background: rgba(255,255,255,0.96); border-bottom: 1px solid var(--slate-100); padding: 14px 0; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .logo-box { display: flex; align-items: center; gap: 14px; }
+  .logo-box img { height: 46px; width: auto; }
+  .header-label { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--slate-500); border-left: 1px solid var(--slate-100); padding-left: 14px; }
 
-    p {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      color: rgba(255, 255, 255, 0.75);
-      margin-bottom: 36px;
-    }
+  /* ===== HERO ===== */
+  .hub-hero { background: linear-gradient(160deg, var(--blue-900) 0%, var(--blue-800) 70%, #2c4a63 100%); color: #fff; padding: 72px 0 88px; position: relative; overflow: hidden; text-align: center; }
+  .hub-hero::before { content: ''; position: absolute; width: 640px; height: 640px; border-radius: 50%; background: radial-gradient(circle, rgba(50,167,223,0.16), transparent 70%); top: -260px; right: -220px; pointer-events: none; }
+  .hub-hero::after { content: ''; position: absolute; width: 520px; height: 520px; border-radius: 50%; background: radial-gradient(circle, rgba(77,120,187,0.18), transparent 70%); bottom: -260px; left: -200px; pointer-events: none; }
+  .hub-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); padding: 7px 16px; border-radius: 999px; font-size: 12px; font-weight: 700; color: var(--blue-400); text-transform: uppercase; letter-spacing: 1.4px; margin-bottom: 24px; position: relative; z-index: 1; }
+  .hub-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 52px; line-height: 1.1; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 16px; position: relative; z-index: 1; }
+  .hub-title .accent { color: var(--accent); font-style: italic; font-weight: 500; }
+  .hub-sub { font-size: 16px; color: rgba(255,255,255,0.72); max-width: 620px; margin: 0 auto; line-height: 1.75; position: relative; z-index: 1; }
 
-    .divider {
-      width: 64px;
-      height: 3px;
-      background: linear-gradient(90deg, #ffd86f, #fc6262);
-      border-radius: 2px;
-      margin: 0 auto 36px;
-    }
+  /* ===== EVENT GRID ===== */
+  .events-section { padding: 80px 0 90px; background: linear-gradient(180deg, var(--blue-50) 0%, var(--white) 100%); }
+  .events-section .section-eyebrow { text-align: center; font-size: 12px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--blue-600); font-weight: 700; margin-bottom: 10px; }
+  .events-section .section-title { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 40px; color: var(--slate-900); margin-bottom: 50px; line-height: 1.15; font-weight: 600; }
+  .events-section .section-title .accent { color: var(--blue-600); font-style: italic; font-weight: 500; }
 
-    .contact a {
-      color: #ffd86f;
-      text-decoration: none;
-      font-weight: 600;
-    }
+  .event-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 560px)); gap: 28px; justify-content: center; }
 
-    .contact a:hover {
-      text-decoration: underline;
-    }
+  .event-card { background: linear-gradient(165deg, var(--blue-800), var(--blue-900)); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; overflow: hidden; color: #fff; box-shadow: var(--shadow-md); display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; }
+  .event-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .event-card-head { display: flex; gap: 18px; align-items: center; padding: 26px 28px 0; }
+  .date-badge { flex-shrink: 0; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: 16px; padding: 12px 16px; text-align: center; min-width: 84px; }
+  .date-badge .db-month { font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); }
+  .date-badge .db-day { font-family: 'Cormorant Garamond', serif; font-size: 38px; line-height: 1.05; font-weight: 600; color: #fff; }
+  .date-badge .db-year { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: rgba(255,255,255,0.55); }
+  .event-when { min-width: 0; }
+  .event-when .ew-day { font-size: 14px; font-weight: 700; color: rgba(255,255,255,0.9); }
+  .event-when .ew-time { font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 2px; }
+  .event-when .ew-tag { display: inline-block; margin-top: 8px; background: rgba(50,167,223,0.15); border: 1px solid rgba(50,167,223,0.4); color: var(--blue-400); font-size: 10.5px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; padding: 4px 12px; border-radius: 999px; }
+  .event-card-body { padding: 20px 28px 0; flex: 1; }
+  .event-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 27px; line-height: 1.2; font-weight: 600; color: #fff; margin-bottom: 6px; }
+  .event-subtitle { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 17px; color: var(--accent); margin-bottom: 14px; }
+  .event-desc { font-size: 14px; color: rgba(255,255,255,0.68); line-height: 1.7; margin-bottom: 20px; }
+  .panelists-label { font-size: 11px; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 12px; }
+  .speaker-tiles { display: grid; gap: 12px; margin-bottom: 22px; }
+  .speaker-tiles[data-cols="1"] { grid-template-columns: minmax(0, 240px); justify-content: center; }
+  .speaker-tiles[data-cols="2"] { grid-template-columns: repeat(2, 1fr); }
+  .speaker-tiles[data-cols="3"] { grid-template-columns: repeat(3, 1fr); }
+  .speaker-tiles[data-cols="4"] { grid-template-columns: repeat(4, 1fr); }
+  .speaker-tile { text-align: center; }
+  .speaker-thumb { width: 58px; height: 58px; border-radius: 50%; object-fit: cover; object-position: center top; border: 2.5px solid rgba(127,196,234,0.65); box-shadow: 0 6px 16px rgba(0,0,0,0.25); background: linear-gradient(135deg, var(--blue-100), var(--blue-50)); }
+  .speaker-thumb-fallback { width: 58px; height: 58px; border-radius: 50%; border: 2.5px solid rgba(127,196,234,0.65); background: rgba(255,255,255,0.08); display: inline-flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--blue-400); }
+  .speaker-tile .st-name { font-size: 11.5px; font-weight: 700; color: rgba(255,255,255,0.88); margin-top: 8px; line-height: 1.3; }
+  .speaker-tile .st-role { font-size: 10px; color: rgba(255,255,255,0.5); line-height: 1.35; margin-top: 2px; }
+  .event-card-foot { padding: 18px 28px 26px; display: flex; align-items: center; justify-content: space-between; gap: 14px; border-top: 1px solid rgba(255,255,255,0.08); flex-wrap: wrap; }
+  .foot-tag { font-size: 12.5px; font-weight: 700; color: rgba(255,255,255,0.75); }
+  .register-btn { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, var(--accent), var(--blue-600)); color: #fff; text-decoration: none; padding: 13px 30px; border-radius: 999px; font-weight: 800; font-size: 14px; letter-spacing: 0.3px; box-shadow: 0 10px 28px rgba(50,167,223,0.35); transition: transform 0.15s, box-shadow 0.15s; }
+  .register-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(50,167,223,0.45); }
 
-    footer {
-      margin-top: 48px;
-      font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.45);
-    }
-  </style>
+  /* ===== FOOTER ===== */
+  footer { background: var(--blue-900); padding: 36px 0 28px; text-align: center; color: rgba(255,255,255,0.5); font-size: 13px; }
+  footer .flogo { margin-bottom: 12px; display: flex; justify-content: center; }
+  footer .flogo img { height: 38px; width: auto; opacity: 0.85; background: #fff; border-radius: 8px; padding: 4px 10px; }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 960px) {
+    .hub-hero { padding: 56px 0 64px; }
+    .hub-title { font-size: 40px; }
+    .events-section { padding: 60px 0 70px; }
+    .events-section .section-title { font-size: 32px; }
+  }
+  @media (max-width: 720px) {
+    .logo-box img { height: 38px; }
+    .header-label { font-size: 10.5px; padding-left: 10px; letter-spacing: 1.4px; }
+    .hub-title { font-size: 32px; }
+    .hub-sub { font-size: 15px; }
+    .event-card-head { padding: 20px 20px 0; }
+    .event-card-body { padding: 16px 20px 0; }
+    .event-card-foot { padding: 16px 20px 22px; }
+    .event-title { font-size: 23px; }
+    .speaker-tiles[data-cols="4"] { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .hub-title { font-size: 27px; }
+    .date-badge { min-width: 72px; padding: 10px 12px; }
+    .date-badge .db-day { font-size: 32px; }
+    .event-card-foot { justify-content: center; }
+    .register-btn { width: 100%; justify-content: center; }
+  }
+</style>
 </head>
 <body>
-  <main class="container">
-    <div class="badge">Coming Soon</div>
-    <h1>Something great is <span>on the way</span></h1>
-    <div class="divider"></div>
-    <p>
-      We're working hard behind the scenes to bring you our new website.
-      Registrations and updates will be available here very soon — stay tuned!
+
+<!-- ======== HEADER ======== -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="logo-box">
+      <img src="logo-nav.svg" alt="Ophthalmology Business Academy" />
+      <span class="header-label">Webinar Registrations</span>
+    </div>
+  </div>
+</header>
+
+<!-- ======== HERO ======== -->
+<section class="hub-hero">
+  <div class="wrap">
+    <div class="hub-eyebrow">Expert Panel Webinar Series &middot; 2026</div>
+    <h1 class="hub-title">Grow Your Practice With <span class="accent">Expert-Led Panels</span></h1>
+    <p class="hub-sub">
+      Live, complimentary panel discussions from the Ophthalmology Business Academy — practical strategies for practice growth, referral networks, and leadership. Free to attend, moderated Q&amp;A, replay sent to every registrant.
     </p>
-    <p class="contact">
-      Questions? Reach us at <a href="mailto:info@example.com">info@example.com</a>
-    </p>
-    <footer>&copy; 2026 OBA Academy. All rights reserved.</footer>
-  </main>
+  </div>
+</section>
+
+<!-- ======== UPCOMING EVENTS ======== -->
+<section class="events-section">
+  <div class="wrap">
+    <div class="section-eyebrow">Upcoming Events</div>
+    <h2 class="section-title">Reserve Your <span class="accent">Seat</span></h2>
+
+    <div class="event-grid">
+
+      <!-- Sept 17 — Ophthalmology Referral Growth Panel -->
+      <div class="event-card">
+        <div class="event-card-head">
+          <div class="date-badge">
+            <div class="db-month">Sep</div>
+            <div class="db-day">17</div>
+            <div class="db-year">2026</div>
+          </div>
+          <div class="event-when">
+            <div class="ew-day">Thursday, September 17</div>
+            <div class="ew-time">12:00 PM &ndash; 1:00 PM EDT</div>
+            <span class="ew-tag">Live Panel</span>
+          </div>
+        </div>
+        <div class="event-card-body">
+          <div class="event-title">Building OD Partnerships That Actually Drive Patient Volume</div>
+          <div class="event-subtitle">Ophthalmology Referral Growth Panel</div>
+          <p class="event-desc">
+            How ophthalmology practices build stronger, more productive partnerships with referring optometrists &mdash; and turn those relationships into a consistent source of patient volume. Four voices on trust, referral handoffs, co-management, and the activities that genuinely influence referral behaviour.
+          </p>
+          <div class="panelists-label">Featured Panelists</div>
+          <div class="speaker-tiles" data-cols="4">
+            <div class="speaker-tile">
+              <img class="speaker-thumb" src="Sept-17/Chris%20Bonsall_OBA_17.09.2026.jpeg" alt="Chris Bonsall" onerror="this.outerHTML='&lt;span class=&quot;speaker-thumb-fallback&quot;&gt;CB&lt;/span&gt;'" />
+              <div class="st-name">Chris Bonsall</div>
+              <div class="st-role">Navigate Patient Solutions</div>
+            </div>
+            <div class="speaker-tile">
+              <img class="speaker-thumb" src="Sept-17/Sean%20Hanlon_OBA_17.09.2026.jpeg" alt="Sean Hanlon" onerror="this.outerHTML='&lt;span class=&quot;speaker-thumb-fallback&quot;&gt;SH&lt;/span&gt;'" />
+              <div class="st-name">Sean Hanlon</div>
+              <div class="st-role">CoFi</div>
+            </div>
+            <div class="speaker-tile">
+              <img class="speaker-thumb" src="Sept-17/Amanda%20Cardwell_OBA_17.09.2026.jpeg" alt="Amanda Cardwell Carones" onerror="this.outerHTML='&lt;span class=&quot;speaker-thumb-fallback&quot;&gt;AC&lt;/span&gt;'" />
+              <div class="st-name">Amanda Cardwell Carones</div>
+              <div class="st-role">Ophthalpreneurs&reg;</div>
+            </div>
+            <div class="speaker-tile">
+              <img class="speaker-thumb" src="Sept-17/Christine%20Lapointe_OBA_17.09.2026.jpeg" alt="Christine Lapointe" onerror="this.outerHTML='&lt;span class=&quot;speaker-thumb-fallback&quot;&gt;CL&lt;/span&gt;'" />
+              <div class="st-name">Christine Lapointe</div>
+              <div class="st-role">Independent Consultant</div>
+            </div>
+          </div>
+        </div>
+        <div class="event-card-foot">
+          <span class="foot-tag">&#127908; Live Expert Panel</span>
+          <a href="Sept-17/" class="register-btn">Register &rarr;</a>
+        </div>
+      </div>
+      <!-- /Sept 17 -->
+
+      <!-- Insert future event cards here in chronological order (playbook §9) -->
+
+    </div>
+  </div>
+</section>
+
+<!-- ======== FOOTER ======== -->
+<footer>
+  <div class="wrap">
+    <div class="flogo">
+      <img src="logo-nav.svg" alt="Ophthalmology Business Academy" />
+    </div>
+    <div>Expert Panel Webinar Series &middot; 2026</div>
+    <div style="margin-top:14px;opacity:0.7;">
+      &copy; 2026 Ophthalmology Business Academy. All rights reserved.
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

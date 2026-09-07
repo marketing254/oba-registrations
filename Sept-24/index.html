@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Building a Profitable Service Line Without Losing Patient Trust | September 24, 2026 | OBA</title>
+<meta name="description" content="Free live expert panel: Building a Profitable Service Line Without Losing Patient Trust. How ophthalmology practices build a financially sustainable dry-eye service line without compromising clinical judgment — cash-pay care, diagnostics such as meibography, osmolarity and MMP-9, service models, and a patient journey across physicians, optometrists, technicians, and care coordinators." />
+<link rel="icon" type="image/svg+xml" href="../logo-nav.svg" />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+<!-- Microsoft Clarity — TODO: register an OBA Clarity project and paste its ID, then uncomment -->
+<!--
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "CLARITY_ID_HERE");
+</script>
+-->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MBLM7XRG2Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MBLM7XRG2Y');
+</script>
+
+<style>
+  :root {
+    --green-900: #16212b;
+    --green-800: #24313f;
+    --green-700: #3c68a8;
+    --green-600: #4D78BB;
+    --green-500: #5b86c4;
+    --green-400: #7fc4ea;
+    --green-100: #c9dced;
+    --green-50:  #edf3f9;
+    --warm-50:   #f7fbfd;
+    --warm-100:  #eaf4fb;
+    --warm-200:  #cfe6f5;
+    --amber:     #32A7DF;
+    --amber-dark:#2274a5;
+    --lime:      #32A7DF;
+    --red-500:   #DC4A4A;
+    --slate-900: #1b2530;
+    --slate-700: #3f4a55;
+    --slate-500: #7f8a95;
+    --slate-300: #B4BAD0;
+    --slate-100: #ECEEF5;
+    --white:     #ffffff;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+    --shadow-md: 0 8px 30px rgba(0,0,0,0.08);
+    --shadow-lg: 0 20px 50px rgba(0,0,0,0.12);
+    --shadow-xl: 0 30px 70px rgba(0,0,0,0.16);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--white); color: var(--slate-700); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+  .ticker { background: var(--green-900); overflow: hidden; padding: 10px 0; position: relative; }
+  .ticker-track { display: flex; animation: scroll-left 30s linear infinite; white-space: nowrap; width: max-content; }
+  .ticker-item { display: inline-flex; align-items: center; gap: 8px; padding: 0 40px; font-size: 13px; font-weight: 600; color: var(--green-400); letter-spacing: 0.5px; }
+  .ticker-item .sep { color: var(--green-700); font-size: 10px; }
+  @keyframes scroll-left { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+  .site-header { background: rgba(255,255,255,0.95); border-bottom: 1px solid var(--slate-100); padding: 12px 0; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .logo-box { display: flex; align-items: center; gap: 12px; }
+  .logo-box img { height: 46px; width: auto; }
+  .header-cta { display: inline-flex; align-items: center; gap: 6px; background: var(--green-600); color: #fff; padding: 10px 22px; border-radius: 999px; font-size: 13px; font-weight: 700; text-decoration: none; transition: background 0.2s; border: none; cursor: pointer; white-space: nowrap; flex-shrink: 0; }
+  .header-cta:hover { background: var(--green-700); }
+
+  .hero { padding: 54px 0 76px; background: radial-gradient(ellipse 70% 80% at 0% 35%, var(--green-50), transparent 70%), radial-gradient(ellipse 55% 70% at 100% 0%, rgba(234,244,251,0.9), transparent 75%), linear-gradient(180deg, var(--white) 0%, var(--green-50) 100%); overflow: hidden; }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr); gap: 42px; align-items: stretch; }
+  .hero-main { padding-top: 18px; display: flex; flex-direction: column; height: 100%; }
+  .hero-copy { max-width: 640px; display: flex; flex-direction: column; flex: 1; }
+  .hero-copy > .hero-eyebrow { order: 1; }
+  .hero-copy > .hero-title { order: 2; }
+  .hero-copy > .hero-event-strip { order: 3; }
+  .hero-copy > .countdown-row { order: 4; }
+  .hero-copy > .hero-sub { order: 5; }
+  .hero-copy > .hero-speaker-row { order: 6; }
+  .hero-event-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 0 0 24px; }
+  .event-chip { background: rgba(255,255,255,0.82); border: 1px solid rgba(77,120,187,0.12); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); }
+  .event-chip-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.1px; color: var(--slate-500); font-weight: 700; margin-bottom: 6px; }
+  .event-chip-value { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 24px; line-height: 1.15; color: var(--green-800); }
+  .hero-speaker-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 24px 0 0; }
+  .hero-speaker { background: rgba(255,255,255,0.78); border: 1px solid rgba(77,120,187,0.12); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow-sm); backdrop-filter: blur(8px); display: flex; align-items: center; gap: 14px; min-height: 94px; }
+  .hero-speaker-photo { width: 58px; height: 58px; border-radius: 50%; overflow: hidden; flex-shrink: 0; border: 3px solid rgba(127,196,234,0.7); box-shadow: 0 6px 18px rgba(0,0,0,0.08); background: linear-gradient(135deg, var(--green-100), var(--green-50)); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--green-700); }
+  .hero-speaker-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+  .hero-speaker-meta { min-width: 0; }
+  .hero-speaker-name { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 20px; line-height: 1.1; color: var(--green-800); word-break: break-word; }
+  .hero-speaker-role { font-size: 10.5px; line-height: 1.4; text-transform: uppercase; letter-spacing: 1px; color: var(--slate-500); font-weight: 700; margin-top: 5px; word-break: break-word; }
+  .hero-form-shell { position: relative; width: 100%; max-width: 520px; justify-self: end; height: 100%; }
+  .hero-form-shell::before { content: ''; position: absolute; inset: 22px -18px -22px 36px; border-radius: 28px; background: linear-gradient(135deg, rgba(77,120,187,0.13), rgba(50,167,223,0.12)); z-index: 0; filter: blur(4px); }
+  .hero-form-shell .reg-card { position: relative; z-index: 1; height: 100%; }
+  .hero-form-copy { margin-bottom: 24px; }
+  .hero-form-copy .section-eyebrow { margin-bottom: 12px; }
+  .hero-form-copy .section-title { margin-bottom: 10px; }
+  .hero-form-copy .section-sub { margin-bottom: 0; }
+
+  .hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: var(--warm-100); border: 1px solid var(--warm-200); padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 700; color: var(--amber-dark); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 22px; }
+  .hero-eyebrow .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--red-500); animation: blink 1.4s infinite; }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  h1.hero-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 48px; line-height: 1.08; color: var(--slate-900); margin-bottom: 18px; letter-spacing: -0.5px; font-weight: 600; }
+  h1.hero-title .accent { color: var(--green-600); font-style: italic; font-weight: 500; }
+  .hero-sub { font-size: 16px; color: var(--slate-500); max-width: 500px; margin-bottom: 30px; line-height: 1.7; }
+
+  .countdown-row { display: flex; gap: 10px; margin-bottom: 32px; }
+  .cd-pill { background: var(--white); border: 1px solid var(--slate-100); border-radius: 14px; padding: 12px 18px; text-align: center; min-width: 72px; box-shadow: var(--shadow-sm); }
+  .cd-num { font-family: 'Cormorant Garamond', serif; font-size: 28px; color: var(--green-800); line-height: 1; font-weight: 600; }
+  .cd-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--slate-500); font-weight: 600; margin-top: 4px; }
+
+  .reg-card { background: var(--white); border-radius: 20px; padding: 36px 36px 32px; border: 1px solid var(--slate-100); box-shadow: var(--shadow-xl); text-align: left; position: relative; overflow: hidden; }
+  .reg-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--green-600), var(--lime), var(--green-400)); }
+  .reg-card .limited { display: inline-flex; align-items: center; gap: 6px; background: var(--green-50); border: 1px solid rgba(77,120,187,0.25); color: var(--green-700); padding: 6px 14px; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 20px; }
+  .hero .section-eyebrow { font-size: 12px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--green-600); font-weight: 700; }
+  .hero .section-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 38px; color: var(--slate-900); line-height: 1.12; font-weight: 600; }
+  .hero .section-sub { color: var(--slate-500); font-size: 15px; line-height: 1.7; }
+
+  form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+  form .field { margin-bottom: 14px; }
+  form label { display: block; font-size: 13px; font-weight: 600; color: var(--slate-700); margin-bottom: 6px; }
+  form label .req { color: var(--red-500); }
+  form input, form textarea, form select { width: 100%; padding: 13px 16px; border-radius: 12px; border: 1.5px solid var(--slate-100); background: var(--green-50); font-size: 14px; font-family: inherit; color: var(--slate-900); transition: border-color 0.2s, box-shadow 0.2s; outline: none; }
+  form textarea { resize: vertical; min-height: 90px; }
+  form select { appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%233f4a55' d='M1.4.6 6 5.2 10.6.6 12 2 6 8 0 2z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; cursor: pointer; }
+  form input:focus, form textarea:focus, form select:focus { border-color: var(--green-500); box-shadow: 0 0 0 3px rgba(77,120,187,0.12); background: var(--white); }
+  form input::placeholder, form textarea::placeholder { color: var(--slate-300); }
+  .submit-btn { width: 100%; background: linear-gradient(135deg, var(--green-600), var(--green-800)); color: #fff; border: none; padding: 16px 24px; border-radius: 14px; font-size: 16px; font-weight: 700; cursor: pointer; font-family: inherit; margin-top: 6px; box-shadow: 0 10px 30px rgba(77,120,187,0.3); transition: transform 0.15s, box-shadow 0.15s; letter-spacing: 0.3px; }
+  .submit-btn:hover { transform: translateY(-1px); box-shadow: 0 14px 40px rgba(77,120,187,0.4); }
+  .form-footer { text-align: center; font-size: 12px; color: var(--slate-500); margin-top: 14px; display: flex; align-items: center; justify-content: center; gap: 6px; }
+  .form-note { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--slate-100); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+  .form-note span { background: var(--green-50); border: 1px solid rgba(77,120,187,0.12); border-radius: 12px; padding: 10px 12px; text-align: center; font-size: 11px; font-weight: 700; letter-spacing: 0.7px; text-transform: uppercase; color: var(--green-700); }
+
+  section.topics { padding: 90px 0; background: var(--white); }
+  .topics .section-eyebrow { text-align: center; font-size: 12px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--green-600); font-weight: 700; margin-bottom: 10px; }
+  .topics .section-title { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; color: var(--slate-900); margin-bottom: 10px; line-height: 1.15; font-weight: 600; }
+  .topics .section-title .accent { color: var(--green-600); font-style: italic; font-weight: 500; }
+  .topics .section-sub { text-align: center; color: var(--slate-500); max-width: 600px; margin: 0 auto 50px; font-size: 15px; }
+  .topic-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .topic-cards .topic-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .topic-card { background: var(--green-50); border: 1px solid rgba(77,120,187,0.1); border-radius: 16px; padding: 28px 26px; display: flex; gap: 18px; align-items: flex-start; transition: border-color 0.2s, box-shadow 0.2s; }
+  .topic-card:hover { border-color: rgba(77,120,187,0.3); box-shadow: var(--shadow-md); }
+  .topic-num { flex-shrink: 0; width: 42px; height: 42px; border-radius: 12px; background: var(--white); border: 1.5px solid rgba(77,120,187,0.2); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--green-700); font-style: italic; font-weight: 600; }
+  .topic-text { font-size: 15px; color: var(--slate-700); line-height: 1.55; font-weight: 500; }
+
+  .about-section { padding: 90px 0; background: var(--green-900); color: #fff; position: relative; overflow: hidden; }
+  .about-section::before { content: ''; position: absolute; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(50,167,223,0.12), transparent 70%); top: -200px; right: -200px; pointer-events: none; }
+  .about-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center; position: relative; z-index: 1; }
+  .about-eyebrow { font-size: 12px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--lime); font-weight: 700; margin-bottom: 14px; }
+  .about-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; line-height: 1.15; margin-bottom: 22px; font-weight: 600; }
+  .about-title .accent { color: var(--lime); font-style: italic; font-weight: 500; }
+  .about-copy { font-size: 15px; color: rgba(255,255,255,0.78); line-height: 1.8; margin-bottom: 16px; }
+  .who-box { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 32px 30px; }
+  .who-box h4 { font-family: 'Cormorant Garamond', serif; font-size: 26px; margin-bottom: 18px; color: #fff; font-weight: 600; }
+  .who-box ul { list-style: none; }
+  .who-box li { padding: 10px 0 10px 28px; position: relative; font-size: 14px; color: rgba(255,255,255,0.82); border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .who-box li:last-child { border-bottom: none; }
+  .who-box li::before { content: ''; position: absolute; left: 0; top: 14px; width: 10px; height: 10px; border-radius: 50%; background: var(--lime); opacity: 0.75; }
+
+  .speakers-section { padding: 90px 0; background: var(--green-50); }
+  .speakers-section .section-eyebrow { text-align: center; font-size: 12px; letter-spacing: 2.2px; text-transform: uppercase; color: var(--green-600); font-weight: 700; margin-bottom: 10px; }
+  .speakers-section .section-title { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 42px; color: var(--slate-900); margin-bottom: 50px; line-height: 1.15; font-weight: 600; }
+  .speakers-section .section-title .accent { color: var(--green-600); font-style: italic; font-weight: 500; }
+  .bio-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .bio-card { background: var(--white); border-radius: 20px; border: 1px solid var(--slate-100); overflow: hidden; box-shadow: var(--shadow-md); transition: transform 0.2s, box-shadow 0.2s; }
+  .bio-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .bio-card-top { display: flex; gap: 18px; padding: 24px 24px 0; align-items: center; }
+  .bio-photo { width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, var(--green-100), var(--green-50)); border: 3px solid var(--green-400); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 28px; color: var(--green-700); flex-shrink: 0; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+  .bio-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+  .bio-name { font-size: 18px; font-weight: 700; color: var(--slate-900); margin-bottom: 2px; }
+  .bio-role { font-size: 12px; color: var(--green-600); font-weight: 600; line-height: 1.35; text-transform: uppercase; letter-spacing: 0.5px; }
+  .bio-text { padding: 16px 24px 24px; font-size: 13px; color: var(--slate-500); line-height: 1.65; }
+
+  .cta-band { padding: 80px 0; background: var(--white); text-align: center; border-top: 1px solid var(--slate-100); }
+  .cta-band h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 44px; color: var(--slate-900); margin-bottom: 10px; font-weight: 600; }
+  .cta-band h3 .accent { color: var(--green-600); font-style: italic; font-weight: 500; }
+  .cta-band p { color: var(--slate-500); font-size: 16px; margin-bottom: 30px; }
+  .cta-btn-lg { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, var(--green-600), var(--green-800)); color: #fff; text-decoration: none; padding: 18px 42px; border-radius: 999px; font-weight: 700; font-size: 16px; box-shadow: 0 14px 40px rgba(77,120,187,0.3); transition: transform 0.15s; }
+  .cta-btn-lg:hover { transform: translateY(-2px); }
+
+  footer { background: var(--green-900); padding: 36px 0 28px; text-align: center; color: rgba(255,255,255,0.5); font-size: 13px; }
+  footer .flogo { margin-bottom: 10px; display: flex; justify-content: center; }
+  footer .flogo img { height: 38px; width: auto; opacity: 0.85; background: #fff; border-radius: 8px; padding: 4px 10px; }
+  footer a { color: var(--lime); text-decoration: none; }
+
+  @media (max-width: 1024px) {
+    h1.hero-title { font-size: 40px; }
+    .hero-grid { gap: 36px; }
+    .hero-form-shell::before { inset: 18px -10px -18px 24px; }
+  }
+  @media (max-width: 960px) {
+    .hero { padding: 48px 0 56px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-main { padding-top: 0; }
+    .hero-copy { max-width: none; }
+    .hero-event-strip, .hero-speaker-row { grid-template-columns: 1fr; }
+    .hero-form-shell { max-width: 640px; }
+    .about-grid { grid-template-columns: 1fr; gap: 36px; }
+    h1.hero-title { font-size: 36px; }
+    .bio-cards { grid-template-columns: 1fr; }
+    .topic-cards { grid-template-columns: 1fr; }
+    section.topics, .about-section, .speakers-section { padding: 60px 0; }
+    .cta-band { padding: 60px 0; }
+    .cta-band h3 { font-size: 32px; }
+  }
+  @media (max-width: 720px) {
+    .site-header { padding: 10px 0; }
+    .logo-box img { height: 38px; }
+    .header-cta { padding: 9px 18px; font-size: 12px; }
+    .hero { padding: 36px 0 44px; }
+    h1.hero-title { font-size: 30px; }
+    .hero-sub { font-size: 15px; }
+    .hero-form-shell::before { inset: 14px 8px -16px 8px; }
+    .hero .section-title { font-size: 30px; }
+    .countdown-row { gap: 8px; }
+    .cd-pill { min-width: 62px; padding: 10px 12px; }
+    .cd-num { font-size: 24px; }
+    .reg-card { padding: 28px 22px 24px; }
+    form .row { grid-template-columns: 1fr; }
+    .form-note { grid-template-columns: 1fr; }
+    .topics .section-title, .about-title, .speakers-section .section-title { font-size: 30px; }
+    .topic-card { padding: 20px 18px; }
+    .cta-band h3 { font-size: 28px; }
+    .cta-btn-lg { padding: 16px 32px; font-size: 15px; }
+  }
+  @media (max-width: 480px) {
+    .header-cta { display: none; }
+    .countdown-row { flex-wrap: wrap; }
+    .cd-pill { flex: 1; min-width: 0; }
+    .hero .section-title { font-size: 28px; }
+    .reg-card { padding: 22px 18px 20px; border-radius: 16px; }
+    .bio-card-top { flex-direction: column; align-items: flex-start; gap: 12px; }
+    .bio-photo { width: 68px; height: 68px; }
+    .who-box { padding: 24px 20px; }
+    .cta-band h3 { font-size: 24px; }
+  }
+  @media (max-width: 360px) {
+    h1.hero-title { font-size: 26px; }
+    .reg-card { padding: 18px 14px 16px; }
+  }
+
+  /* Single-speaker layout (Sept 24) */
+  .hero-speaker-row[data-count="1"] { grid-template-columns: minmax(0, 1fr); }
+  .hero-speaker-row[data-count="1"] .hero-speaker { min-height: 0; }
+  .bio-cards[data-count="1"] { grid-template-columns: minmax(0, 720px); justify-content: center; }
+  .bio-cards[data-count="1"] .bio-text { font-size: 14px; line-height: 1.75; }
+</style>
+</head>
+<body>
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item">FREE LIVE PANEL &mdash; September 24, 2026 at 12:00 PM EDT <span class="sep">|</span></span>
+    <span class="ticker-item">Limited seats &middot; Replay sent to all registrants <span class="sep">|</span></span>
+    <span class="ticker-item">Dry eye service line &middot; Cash-pay care &middot; Diagnostics &middot; Patient trust <span class="sep">|</span></span>
+    <span class="ticker-item">Live Zoom Panel + Moderated Q&amp;A &middot; Complimentary for attendees <span class="sep">|</span></span>
+    <span class="ticker-item">FREE LIVE PANEL &mdash; September 24, 2026 at 12:00 PM EDT <span class="sep">|</span></span>
+    <span class="ticker-item">Limited seats &middot; Replay sent to all registrants <span class="sep">|</span></span>
+    <span class="ticker-item">Dry eye service line &middot; Cash-pay care &middot; Diagnostics &middot; Patient trust <span class="sep">|</span></span>
+    <span class="ticker-item">Live Zoom Panel + Moderated Q&amp;A &middot; Complimentary for attendees <span class="sep">|</span></span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="logo-box">
+      <a href="#register"><img src="../logo-nav.svg" alt="Ophthalmology Business Academy" /></a>
+    </div>
+    <a href="#register" class="header-cta">Register Free &rarr;</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-main">
+      <div class="hero-copy">
+      <div class="hero-eyebrow"><span class="dot"></span> Live Webinar &middot; Free to Attend</div>
+
+      <div class="hero-event-strip">
+        <div class="event-chip">
+          <div class="event-chip-label">Date</div>
+          <div class="event-chip-value">September 24, 2026</div>
+        </div>
+        <div class="event-chip">
+          <div class="event-chip-label">Time</div>
+          <div class="event-chip-value">12:00 PM EDT</div>
+        </div>
+        <div class="event-chip">
+          <div class="event-chip-label">Format</div>
+          <div class="event-chip-value">Live Panel + Q&amp;A</div>
+        </div>
+      </div>
+
+      <h1 class="hero-title">
+        Building a <span class="accent">Profitable Service Line</span> Without Losing <span class="accent">Patient Trust</span>
+      </h1>
+
+      <p class="hero-sub">
+        A dry eye growth panel on how ophthalmology practices build a financially sustainable dry-eye service line without compromising clinical judgment or patient trust &mdash; how to keep recommendations clinically grounded, choose the right service model, and create an experience that helps patients understand both their condition and their treatment options.
+      </p>
+
+      <div class="hero-speaker-row" data-count="1">
+        <div class="hero-speaker">
+          <div class="hero-speaker-photo">
+            <img src="Crystal%20Brimer_OBA_24.09.2026.jpg" alt="Dr. Crystal Brimer" onerror="this.style.display='none';this.parentNode.innerHTML='CB'" />
+          </div>
+          <div class="hero-speaker-meta">
+            <div class="hero-speaker-name">Dr. Crystal Brimer</div>
+            <div class="hero-speaker-role">Owner &amp; Founder &middot; Dry Eye Institute &amp; Dry Eye Equation</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="countdown-row" id="countdown">
+        <div class="cd-pill"><div class="cd-num" id="cd-d">--</div><div class="cd-label">Days</div></div>
+        <div class="cd-pill"><div class="cd-num" id="cd-h">--</div><div class="cd-label">Hours</div></div>
+        <div class="cd-pill"><div class="cd-num" id="cd-m">--</div><div class="cd-label">Mins</div></div>
+        <div class="cd-pill"><div class="cd-num" id="cd-s">--</div><div class="cd-label">Secs</div></div>
+      </div>
+      </div>
+    </div>
+
+    <div class="hero-form-shell" id="register">
+      <div class="reg-card">
+        <div class="hero-form-copy">
+          <div class="section-eyebrow">Save Your Seat</div>
+          <h2 class="section-title">Reserve Your Free Spot</h2>
+          <p class="section-sub">Replay sent to all registrants &middot; Moderated Q&amp;A included</p>
+        </div>
+        <div class="limited">&#9889; Limited seats available</div>
+
+        <form id="reg-form" novalidate>
+          <div class="row">
+            <div>
+              <label>First Name <span class="req">*</span></label>
+              <input type="text" name="first_name" placeholder="First name" autocomplete="given-name" required />
+            </div>
+            <div>
+              <label>Last Name <span class="req">*</span></label>
+              <input type="text" name="last_name" placeholder="Last name" autocomplete="family-name" required />
+            </div>
+          </div>
+          <div class="field">
+            <label>Email Address <span class="req">*</span></label>
+            <input type="email" name="email" placeholder="you@yourpractice.com" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label>Phone <span class="req">*</span></label>
+            <input type="tel" name="phone" placeholder="+1 (555) 123-4567" autocomplete="tel" required />
+          </div>
+          <div class="field">
+            <label>Job Title <span class="req">*</span></label>
+            <input type="text" name="job_title" placeholder="e.g. Practice Administrator, Ophthalmologist" autocomplete="organization-title" required />
+          </div>
+          <div class="field">
+            <label>Practice Name <span class="req">*</span></label>
+            <input type="text" name="practice_name" placeholder="Your practice" autocomplete="organization" required />
+          </div>
+          <div class="row">
+            <div>
+              <label>Would you like a text reminder? <span class="req">*</span></label>
+              <select name="text_reminder" required>
+                <option value="" disabled selected>Select&hellip;</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div>
+              <label>Are you an owner of the practice? <span class="req">*</span></label>
+              <select name="practice_owner" required>
+                <option value="" disabled selected>Select&hellip;</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label>What question would you like the panel to address? <span class="req">*</span></label>
+            <textarea name="question" placeholder="Share the question you'd like the panel to address&hellip;" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn" id="reg-btn">Register Free &mdash; Save My Seat &rarr;</button>
+          <div class="form-footer">&#128274; Your info is secure. We never spam &mdash; unsubscribe anytime.</div>
+          <div id="reg-msg" style="display:none;margin-top:14px;padding:12px 16px;border-radius:10px;font-size:14px;font-weight:600;text-align:center;"></div>
+        </form>
+
+        <div class="form-note">
+          <span>Moderated Q&amp;A</span>
+          <span>Replay Included</span>
+          <span>Practical Playbooks</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topics">
+  <div class="wrap">
+    <div class="section-eyebrow">Key Discussion Topics</div>
+    <h2 class="section-title">What We'll <span class="accent">Cover</span></h2>
+    <p class="section-sub">Practical approaches that support better clinical decisions, clearer patient communication, stronger team utilization, and a dry-eye program that grows responsibly.</p>
+
+    <div class="topic-cards">
+      <div class="topic-card">
+        <div class="topic-num">1</div>
+        <div class="topic-text">How an ophthalmology practice can introduce cash-pay dry-eye services while keeping every recommendation clinically grounded and patient-centred</div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-num">2</div>
+        <div class="topic-text">Meibography, osmolarity, MMP-9, and other diagnostics &mdash; which tools genuinely improve clinical decisions, patient understanding, treatment acceptance, or financial performance enough to justify their cost</div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-num">3</div>
+        <div class="topic-text">Is dry eye better developed as a high-volume extension of routine medical care or as a dedicated, higher-touch specialty service?</div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-num">4</div>
+        <div class="topic-text">Which parts of the dry-eye patient journey should remain physician-led, and where optometrists, technicians, and care coordinators can take greater ownership</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="wrap about-grid">
+    <div>
+      <div class="about-eyebrow">About This Session</div>
+      <h2 class="about-title">
+        Grow a dry-eye program that stays <span class="accent">patient-centred</span>
+      </h2>
+      <p class="about-copy">
+        Join the Ophthalmology Business Academy for a focused discussion on how ophthalmology practices can build a financially sustainable dry-eye service line without compromising clinical judgment or patient trust. The panel will explore the decisions practices face when expanding cash-pay care, including how to keep recommendations clinically grounded, determine the right service model, and create an experience that helps patients understand both their condition and their treatment options.
+      </p>
+      <p class="about-copy">
+        This discussion will examine how practices can evaluate the clinical and business value of diagnostics such as meibography, osmolarity, and MMP-9, decide between a higher-volume care model and a more specialized service, and structure the patient journey across physicians, optometrists, technicians, and care coordinators. The goal is to identify practical approaches that support better clinical decisions, clearer patient communication, stronger team utilization, and a dry-eye program that can grow responsibly while remaining patient-centred.
+      </p>
+    </div>
+    <div class="who-box">
+      <h4>This Panel Is For You If...</h4>
+      <ul>
+        <li>You own, lead, or manage an ophthalmology practice</li>
+        <li>You're launching or expanding cash-pay dry-eye services</li>
+        <li>You're unsure which diagnostics are worth the investment</li>
+        <li>You want a service model that grows without eroding patient trust</li>
+        <li>You want ODs, technicians, and coordinators to own more of the dry-eye journey</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="speakers-section">
+  <div class="wrap">
+    <div class="section-eyebrow">Meet Your Panelist</div>
+    <h2 class="section-title">Learn From <span class="accent">The Best</span></h2>
+
+    <div class="bio-cards" data-count="1">
+      <div class="bio-card">
+        <div class="bio-card-top">
+          <div class="bio-photo">
+            <img src="Crystal%20Brimer_OBA_24.09.2026.jpg" alt="Dr. Crystal Brimer" onerror="this.style.display='none';this.parentNode.innerHTML='CB'" />
+          </div>
+          <div class="bio-meta">
+            <div class="bio-name">Dr. Crystal Brimer</div>
+            <div class="bio-role">Owner &amp; Founder &middot; Dry Eye Institute &amp; Dry Eye Equation</div>
+          </div>
+        </div>
+        <div class="bio-text">
+          Dr. Crystal Brimer is a Fellow of the AAO and primary clinical investigator who, after 18 years in practice, made a pivotal shift in 2017/2018 &mdash; designing the Oculus 5M software platform, converting her Wilmington, NC office into a thriving specialty dry eye referral center, and founding the Dry Eye Institute to equip doctors nationwide with the clinical knowledge and logistical tools to build their own dry eye practices, whether standalone or within an existing practice. Dr. Brimer is known for her passion to lecture and consult in the field of ocular surface disease, but she is equally driven by closing gaps in patient care &mdash; a mission that led her to found a nonprofit dedicated to helping patients access the out-of-pocket procedures they need.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h3>Ready to Build Your <span class="accent">Dry Eye Service Line?</span></h3>
+    <p>Complimentary registration &middot; Live Zoom Panel &middot; Moderated Q&amp;A &middot; Replay included</p>
+    <a href="#register" class="cta-btn-lg">Reserve My Spot &rarr;</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="flogo">
+      <a href="#register"><img src="../logo-nav.svg" alt="Ophthalmology Business Academy" /></a>
+    </div>
+    <div>Expert Panel Webinar Series &middot; 2026</div>
+    <div style="margin-top:14px;opacity:0.7;">
+      &copy; 2026 Ophthalmology Business Academy. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw5cWS9j1LmzIi01qQ5GuWTgibXw6Rz8PLAoMEOqll1sJNHLFUBx8Mh_YoFWsycprjJnQ/exec';
+  const LOCAL_TEST_MODE = APPS_SCRIPT_URL.startsWith('REPLACE_ME');
+
+  document.getElementById('reg-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn  = document.getElementById('reg-btn');
+    const msg  = document.getElementById('reg-msg');
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    const source_id = new URLSearchParams(window.location.search).get('s') || '';
+    const data = {
+      event_key:      'event_2026_09_24',
+      first_name:     form.first_name.value.trim(),
+      last_name:      form.last_name.value.trim(),
+      email:          form.email.value.trim(),
+      phone:          form.phone.value.trim(),
+      job_title:      form.job_title.value.trim(),
+      practice_name:  form.practice_name.value.trim(),
+      text_reminder:  form.text_reminder.value,
+      practice_owner: form.practice_owner.value,
+      question:       form.question.value.trim(),
+      source_id:      source_id,
+      source_name:    '',
+    };
+    btn.disabled    = true;
+    btn.textContent = 'Registering…';
+    msg.style.display = 'none';
+    if (LOCAL_TEST_MODE) {
+      console.log('%c[LOCAL TEST] Payload:', 'color:#4D78BB;font-weight:bold;', data);
+      setTimeout(() => {
+        msg.style.cssText = 'display:block;margin-top:14px;padding:12px 16px;border-radius:10px;font-size:14px;font-weight:600;text-align:center;background:#d4edda;color:#155724;border:1px solid #c3e6cb;';
+        msg.textContent = '✅ [TEST] Payload captured — check browser console.';
+        btn.disabled = false;
+        btn.textContent = 'Register Free — Save My Seat →';
+        form.reset();
+      }, 800);
+      return;
+    }
+    // Fire the request and show success immediately — the no-cors response is
+    // opaque anyway, so waiting on it only delays the UI (Apps Script cold
+    // starts can take several seconds). keepalive lets the request finish
+    // even if the visitor navigates away right after submitting.
+    fetch(APPS_SCRIPT_URL, { method: 'POST', mode: 'no-cors', keepalive: true, headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify(data) })
+      .catch(function(err) {
+        console.error('Registration error:', err);
+        form.querySelectorAll('input, textarea, select').forEach(i => i.disabled = false);
+        btn.disabled = false;
+        btn.textContent = 'Register Free — Save My Seat →';
+        btn.style.background = '';
+        btn.style.boxShadow  = '';
+        msg.style.cssText = 'display:block;margin-top:14px;padding:12px 16px;border-radius:10px;font-size:14px;font-weight:600;text-align:center;background:#f8d7da;color:#721c24;border:1px solid #f5c6cb;';
+        msg.textContent = 'Something went wrong. Please try again or contact us directly.';
+      });
+
+    form.querySelectorAll('input, textarea, select').forEach(i => i.disabled = true);
+    btn.disabled = true;
+    btn.textContent = '✅ You\'re Registered!';
+    btn.style.background = 'linear-gradient(135deg, #32A7DF, #4D78BB)';
+    btn.style.boxShadow  = '0 10px 30px rgba(50,167,223,0.35)';
+    msg.style.cssText = 'display:block;margin-top:14px;padding:12px 16px;border-radius:10px;font-size:14px;font-weight:600;text-align:center;background:#edf3f9;color:#24557d;border:1px solid #c9dced;';
+    msg.textContent = 'You\'re all set! Check your email for the Zoom confirmation link.';
+  });
+
+  // -- COUNTDOWN -- September 24, 2026 12:00 PM EDT (UTC-4) = 16:00 UTC --
+  const target = new Date('2026-09-24T16:00:00Z').getTime();
+  function tick() {
+    const diff = Math.max(0, target - Date.now());
+    if (diff === 0) {
+      document.getElementById('countdown').innerHTML = '<div style="color:var(--green-500);font-size:18px;font-weight:700;letter-spacing:0.03em;">The panel is live now!</div>';
+      return;
+    }
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff / 3600000) % 24);
+    const m = Math.floor((diff / 60000) % 60);
+    const s = Math.floor((diff / 1000) % 60);
+    document.getElementById('cd-d').textContent = String(d).padStart(2,'0');
+    document.getElementById('cd-h').textContent = String(h).padStart(2,'0');
+    document.getElementById('cd-m').textContent = String(m).padStart(2,'0');
+    document.getElementById('cd-s').textContent = String(s).padStart(2,'0');
+  }
+  tick();
+  setInterval(tick, 1000);
+</script>
+
+</body>
+</html>

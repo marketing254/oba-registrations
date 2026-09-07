@@ -1,0 +1,6 @@
+# Keep internal plumbing out of the public site repo (playbook §22):
+# Apps Script sources contain spreadsheet IDs and n8n webhook URLs.
+*.gs
+# n8n workflow exports contain account IDs and credential references.
+*.json
+!package.json

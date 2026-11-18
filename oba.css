@@ -371,6 +371,7 @@ body.nav-locked { overflow: hidden; }
 .tile__bio-pane { margin-top: 1.5rem; flex: 1; border-radius: var(--radius-md); border: 1px solid var(--line); background: var(--canvas); padding: 1.25rem; }
 @media (min-width: 640px) { .tile__bio-pane { padding: 1.5rem; } }
 .tile__bio-pane p { font-size: var(--text-body); line-height: 1.65; color: var(--ink-500); }
+.tile__bio-pane p + p { margin-top: 0.75rem; }
 
 /* ---------- register card + form ---------- */
 .reg-card { border-radius: var(--radius-lg); border: 1px solid var(--line); background: var(--canvas); padding: 1.5rem; color: var(--ink-700); }
